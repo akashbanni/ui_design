@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form with Table Structure</title>
+  </head>
+  <body>
+    <h1>Contact Us</h1>
+
+    <form action="/submit" method="post">
+      <table>
+        <tr>
+          <td><label for="name">Name:</label></td>
+          <td><input type="text" id="name" name="name" required /></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" id="email" name="email" required /></td>
+        </tr>
+        <tr>
+          <td><label for="message">Message:</label></td>
+          <td>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2"><input type="submit" value="Submit" /></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
