@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body>
+    <input type="text" id="Email" placeholder="Email" size="40" />
+    <button onclick="addtext()">submit</button>
+
+    <script>
+      var uname;
+
+      function addtext() {
+        uname = document.getElementById("Email").value;
+        console.log(uname);
+        if (uname.includes("@gmail.com")) {
+        } else {
+          var email_updated = uname + "@gmail.com";
+
+          document.getElementById("Email").value = email_updated;
+        }
+      }
+    </script>
+  </body>
+</html>
