@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/034b9adbfe.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Clone</title>
+    <style>
+      body {
+        background-color: wheat;
+      }
+
+      .input-group {
+        position: relative;
+      }
+      nav {
+        background-color: beige;
+        height: 50px;
+      }
+
+      .input-group i {
+        position: absolute;
+        top: 50%;
+
+        left: 20px;
+        color: #222222;
+      }
+      input[type="search"] {
+        border-radius: 5px;
+        background-color: beige;
+        padding-top: 10px;
+        margin-top: 6px;
+      }
+      .logo {
+        display: flex;
+        position: relative;
+        top: 5px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        padding-left: 10px;
+      }
+      .img {
+        position: relative;
+        padding: 10px;
+      }
+      .icon {
+        position: absolute;
+        left: 150px;
+      }
+      i {
+        position: absolute;
+        bottom: 12px;
+      }
+      input::placeholder {
+        position: relative;
+        padding-left: 35px;
+        bottom: 3px;
+      }
+
+      .nav-header {
+        position: relative;
+        z-index: 2;
+        left: 800px;
+      }
+      .btn {
+        display: inline-block;
+        position: absolute;
+        background-color: white;
+        border-radius: 4px;
+        color: black;
+        border: none;
+        line-height: 34px;
+        width: 190px;
+        padding: 5px;
+        font-family: "Times New Roman", Times, serif;
+        font-weight: bold;
+        font-size: large;
+        top: 550px;
+        right: 700px;
+      }
+      .text {
+        display: inline-block;
+        position: absolute;
+        text-align: center;
+        color: brown;
+        font-size: 40px;
+        font-weight: 500;
+        left: 450px;
+      }
+      .container {
+        position: relative;
+        display: flex;
+        margin-left: 110px;
+        top: 120px;
+      }
+      .img-design {
+        display: grid;
+        border-radius: 5px;
+        grid-template-rows: 300px 300px 300px 300px;
+      }
+
+      .img-design:hover {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="input-group logo">
+          <img
+            class="img"
+            src="https://www.titan.co.in/on/demandware.static/-/Library-Sites-TitanSharedLibrary/default/dwb6d5816b/images/homepage/titan-logo.svg"
+          />
+          <div class="icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              type="Search"
+              size="100px"
+              size="30"
+              placeholder="Search..."
+            />
+            <!-- <span class="user-position">
+              <i class="fa-regular fa-user"></i>
+              <a href="#">Account</a>
+            </span>
+
+            <a href="#">Wishlist</a>
+            <a href="#">Cart</a>
+            <a href="#">Orders</a> -->
+          </div>
+          <div class="nav-header">
+            <span>
+              <i
+                class="fa-regular fa-user"
+                style="display: flex; left: 30px; bottom: 15px"
+              ></i>
+              <a href="#">Account</a>
+            </span>
+            <span>
+              <i
+                class="fa-regular fa-heart"
+                style="display: flex; left: 95px; bottom: 15px"
+              ></i>
+              <a href="#">Wishlist</a>
+            </span>
+            <span>
+              <i
+                class="fa-solid fa-cart-shopping"
+                style="display: flex; left: 150px; bottom: 15px"
+              ></i>
+              <a href="#">Cart</a>
+            </span>
+            <span>
+              <i
+                class="fa-solid fa-truck-fast"
+                style="display: flex; left: 200px; bottom: 15px"
+              ></i>
+              <a href="#">Orders</a>
+            </span>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <hr />
+    <main>
+      <div>
+        <img src="Banner_1.webp" width="1470px" />
+      </div>
+      <button class="btn">SHOP NOW</button>
+      <div class="text">
+        <h3>What Are You Looking For?</h3>
+      </div>
+      <div class="container">
+        <div>
+          <img
+            class="img-design"
+            src="https://titanworld.com/cdn/shop/files/fitness_85d3e4ea-82e4-4691-950d-c9ed9cffd513.png?v=1702047172"
+            alt=""
+            width="300px"
+          />
+        </div>
+
+        <div>
+          <img
+            class="img-design"
+            src="https://titanworld.com/cdn/shop/files/partywear_a0405686-3266-4d07-a12f-ed16e9d76b01.png?v=1702047300"
+            alt=""
+            width="300px"
+            style="margin-left: 30px"
+          />
+        </div>
+
+        <div>
+          <img
+            class="img-design"
+            src="https://titanworld.com/cdn/shop/files/casual_e0d5e499-30e3-4dfc-b383-a27406e5f8fc.png?v=1702047343"
+            alt=""
+            width="300px"
+            style="margin-left: 30px"
+          />
+        </div>
+
+        <div>
+          <img
+            class="img-design"
+            src="https://titanworld.com/cdn/shop/files/workwear_4231343d-ca31-4fb2-b2af-ff0db239db03.png?v=1702047468"
+            alt=""
+            width="300px"
+            style="margin-left: 30px"
+          />
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
