@@ -102,10 +102,40 @@
         display: grid;
         border-radius: 5px;
         grid-template-rows: 300px 300px 300px 300px;
+        margin-bottom: 40px;
+      }
+      .img-design1 {
+        display: grid;
+        border-radius: 5px;
+        grid-template-rows: 400px 400px 400px;
+        margin-bottom: 40px;
       }
 
       .img-design:hover {
-        transform: scale(1.1);
+        transform: scale(1.05);
+      }
+      .img-design1:hover {
+        transform: scale(1.05);
+      }
+
+      footer {
+        background-color: beige;
+        height: 200px;
+        position: relative;
+        top: 100px;
+      }
+
+      details {
+        position: relative;
+        padding-top: 50px;
+        margin-left: 250px;
+      }
+      .li {
+        padding-top: 5px;
+      }
+      .footer {
+        display: grid;
+        grid-template-columns: 500px 500px;
       }
     </style>
   </head>
@@ -170,7 +200,7 @@
     <hr />
     <main>
       <div>
-        <img src="Banner_1.webp" width="1470px" />
+        <img src="Banner_1.webp" width="1500px" />
       </div>
       <button class="btn">SHOP NOW</button>
       <div class="text">
@@ -216,7 +246,69 @@
           />
         </div>
       </div>
+
+      <!-- section two -->
+
+      <div class="container">
+        <div>
+          <img
+            class="img-design1"
+            src="https://titanworld.com/cdn/shop/files/Men_c80951ec-95b3-4f47-b0cb-b64463d82464.png?v=1702047542&width=440"
+            alt=""
+            width="400px"
+          />
+        </div>
+
+        <div>
+          <img
+            class="img-design1"
+            src="https://titanworld.com/cdn/shop/files/smart_36778d2e-a934-4321-9ed3-8babf0977a70.png?v=1702047585&width=440"
+            alt=""
+            width="400px"
+            style="margin-left: 30px"
+          />
+        </div>
+
+        <div>
+          <img
+            class="img-design1"
+            src="https://titanworld.com/cdn/shop/files/Women_e35fdd60-cf19-44c3-b1fa-1e4858e1aa90.png?v=1702047624&width=440"
+            alt=""
+            width="400px"
+            style="margin-left: 30px"
+          />
+        </div>
+      </div>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer">
+        <div>
+          <details open>
+            <summary>INFO</summary>
+            <ul type="none">
+              <li class="li"><a href="#">ABOUT US</a></li>
+              <li class="li"><a href="#">STORE LOCATOR</a></li>
+              <li class="li"><a href="#">BUSINESS QUERIES</a></li>
+            </ul>
+          </details>
+        </div>
+
+        <div>
+          <details open>
+            <summary>POLICIES</summary>
+            <ul type="none">
+              <li class="li"><a href="#">COOKIE POLICY</a></li>
+              <li class="li"><a href="#">PRIVACY POLICY</a></li>
+              <li class="li"><a href="#">TERMS & CONDITIONS</a></li>
+            </ul>
+          </details>
+        </div>
+      </div>
+      <div style="background-color: #222222">
+        <h4 style="color: bisque; text-align: center">
+          &copy;2024 TITAN WATCHES &#174;
+        </h4>
+      </div>
+    </footer>
   </body>
 </html>
