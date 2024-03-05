@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -6,25 +6,37 @@
     <title>Document</title>
     <script src="js_learner.js"></script>
   </head>
-  <body></body>
-</html> -->
-
-<html>
-  <head> </head>
   <body>
-    <input type="text" id="username" onkeyup="convert()" />
-    <span id="msg" style="color: red"></span>
-    <script>
-      function convert() {
-        var uname = document.getElementById("username").value;
-        uname = uname.toUpperCase();
-        document.getElementById("username").value = uname;
-        if (uname.includes(" ")) {
-          document.getElementById("msg").innerText = "Email Cannot have space";
-        } else {
-          document.getElementById("msg").innerText = "";
-        }
-      }
-    </script>
+    <center>
+      <input type="text" id="fname" placeholder="First Name" /><br /><br />
+      <input type="text" id="lname" placeholder="Last Name" /><br /><br />
+      <input type="email" id="email" placeholder="Email" /><br /><br />
+      <input type="password" id="password" placeholder="password" /><br /><br />
+      <select id="date">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+      <select id="month">
+        <option>jan</option>
+        <option>feb</option>
+        <option>mar</option>
+        <option>apr</option>
+        <option>may</option>
+      </select>
+      <select id="year">
+        <option>1999</option>
+        <option>2000</option>
+        <option>2001</option>
+        <option>2002</option>
+        <option>2003</option></select
+      ><br /><br />
+      <input type="radio" id="genderm" />MALE
+      <input type="radio" id="genderf" />FEMALE
+      <input type="radio" id="genderc" checked />Custom <br /><br />
+      <button onclick="signup()">SIGNUP</button>
+    </center>
   </body>
 </html>

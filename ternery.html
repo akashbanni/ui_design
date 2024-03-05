@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input id="otp" type="text" placeholder="Enter OTP" />
+
+    <button onclick="verify()">Verify OTP</button><br />
+  </body>
+  <script>
+    var otp = 2809;
+    function verify() {
+      var otp = document.getElementById("otp").value;
+
+      otp == 2809 ? alert("Correct") : alert("Wrong");
+    }
+  </script>
+</html>
