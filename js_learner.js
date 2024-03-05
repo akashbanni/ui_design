@@ -72,12 +72,7 @@ function signup(){
     var date = document.getElementById("date").value;
     var month = document.getElementById("month").value;
     var year = document.getElementById("year").value;
-    var male = document.getElementById("genderm").value;
-    console.log(male);
-    var female = document.getElementById("genderf").value;
-    console.log(female);
-    var custom = document.getElementById("genderc").value;
-    console.log(custom);
+    var gender = document.querySelector("input[type='radio']:checked").value;
 
     var obj = {
         
@@ -87,9 +82,7 @@ function signup(){
         },
         email:email,
         password : password,
-        genderm : male,
-        genderf:female,
-        genderc : custom,
+        gender : gender,
 
         dateofbirth : {
             date : date,
