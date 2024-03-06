@@ -1,0 +1,71 @@
+<!-- Form:
+Task: Create a simple contact form with fields for name, email, message, 
+and a submit button. -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      form {
+        font-family: Arial, sans-serif;
+        width: 100%;
+        border-radius: 6px;
+        opacity: 0.7;
+      }
+
+      button {
+        margin: 15px;
+        height: 30px;
+        color: white;
+        background: linear-gradient(
+          309deg,
+          rgb(179, 110, 61) 20%,
+          rgba(224, 228, 153, 0.902) 35%,
+          rgb(23, 25, 33) 70%
+        );
+        width: 120px;
+        border-radius: 5px;
+      }
+      body {
+        background-image: url(https://media.istockphoto.com/id/490774222/photo/view-of-a-contemporary-glass-skyscraper-reflecting-the-blue-sky.jpg?s=2048x2048&w=is&k=20&c=wNfvDLa-9TbOZQiZJTV_KZdRcyPFV5xbvKy949Cf2Sg=);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <form>
+        <img
+          src="_cfa92d27-2a91-4bba-bacc-1ffcc2b2810f.jpg"
+          width="250px"
+        /><br /><br />
+
+        <input type="text" id="name" placeholder="Name" required />
+        <br /><br />
+        <input type="email" id="email" placeholder="Email Address" />
+
+        <br /><br />
+        <input
+          type="text"
+          id="phonenumber"
+          placeholder="Phone Number (Optional)"
+        />
+        <br /><br />
+        <textarea
+          id="message"
+          rows="2"
+          cols="20"
+          placeholder="Message"
+        ></textarea>
+        <br /><br />
+
+        <button type="submit">Submit</button>
+      </form>
+    </center>
+  </body>
+</html>
