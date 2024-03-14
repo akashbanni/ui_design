@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <center>
+      <h1>Add Product Here</h1>
+      <input type="text" placeholder="product Id" id="productId" /><br /><br />
+      <input type="text" placeholder="product name" id="name" /><br /><br />
+      <input type="text" placeholder="product price" id="price" /><br /><br />
+      <input
+        type="text"
+        placeholder="product image url"
+        id="image"
+      /><br /><br />
+      <button onclick="addProduct()">Add Product</button>
+      <hr />
+      <table width="100%">
+        <thead>
+          <th>Product Id</th>
+          <th>Product Name</th>
+          <th>Product Price</th>
+          <th>Product Image</th>
+          <th>Delete</th>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </center>
+    <script>
+      var products = [];
+      function addProduct() {
+        var productId = document.getElementById("productId").value;
+        var name = document.getElementById("name").value;
+        var price = document.getElementById("price").value;
+        var image = document.getElementById("image").value;
+        var product = {
+          productId: productId,
+          name: name,
+          price: price,
+          imageURL: image,
+        };
+        products.push(product);
+        console.log(products);
+        showProducts();
+      }
+      function showProducts() {
+        var index = 0;
+        var tableRows = "";
+        while (index < products.length) {
+          var product = products[index];
+          tableRows =
+            tableRows +
+            "<tr><td>" +
+            product.productId +
+            "</td>" +
+            "<td>" +
+            product.name +
+            "</td>" +
+            "<td>" +
+            product.price +
+            "</td>" +
+            "<td>" +
+            "<img height='84px' width='84px' src='" +
+            product.imageURL +
+            "'>" +
+            "</td>" +
+            " <td>" +
+            "<button onclick='deleteProduct(" +
+            product.productId +
+            ")'>Delete</button>" +
+            "</td></tr>";
+          index++;
+        }
+        document.getElementById("tbody").innerHTML = tableRows;
+      }
+      function deleteProduct(productId) {
+        console.log(typeof productId);
+        var index = 0;
+        while (index <= products.length) {
+          if (products[index].productId == productId) {
+            products.splice(index, 1);
+            break;
+          }
+          index++;
+        }
+        showProducts();
+      }
+    </script>
+  </body>
+</html>
